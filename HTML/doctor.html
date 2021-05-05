@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physiotherapists</title>
+  <link rel="stylesheet" href="../CSS/doctor.css">
+</head>
+
+  <body id="body">
+    <section id="sec" class="hero">
+        <table>
+        <ul id="list">
+        </ul>
+       </table>
+    </section>
+
+   <!--database--->
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyC8HK2fMjYyuNQbYsZF_CcZDaDcQPwgddg",
+    authDomain: "virtual-hospital-891d2.firebaseapp.com",
+    databaseURL: "https://virtual-hospital-891d2-default-rtdb.firebaseio.com",
+    projectId: "virtual-hospital-891d2",
+    storageBucket: "virtual-hospital-891d2.appspot.com",
+    messagingSenderId: "658577231861",
+    appId: "1:658577231861:web:0ea622df058106d82adabc"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<!--database over..-->
+<script src="../JS/doctor.js"></script>
+</body>
+</html>

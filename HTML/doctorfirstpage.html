@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+    <title>Doctor-First-Page </title>
+    <link rel="stylesheet" href="../CSS/doctorfirstpage.css">
+</head>
+<body>
+    <div class="form-structor">
+        <div class="signup">
+            <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+            <div class="form-holder">
+                <input id="name" type="text" class="input" placeholder="Name" />
+                <input id="r-email" type="email" class="input" placeholder="Email" />
+                <input id="r-password" type="password" class="input" placeholder="Password" />
+
+                <div class="container">              
+                    <div class="select-box" id="data">
+                      <div class="options-container">
+                        <div class="option">
+                          <input
+                            type="radio"
+                            class="radio"
+                            id="General_Physician"
+                            name="category"
+                          />
+                          <label for="General Physician">General Physician</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="Physiotherapists" name="category" />
+                          <label for="Physiotherapists">Physiotherapists</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="Cardiologists" name="category" />
+                          <label for="Cardiologists">Cardiologists</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="Dermatologists" name="category" />
+                          <label for="Dermatologists">Dermatologists</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="Neurologists" name="category" />
+                          <label for="Neurologists">Neurologists</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="Oncologist" name="category" />
+                          <label for="Oncologist">Oncologist</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="Psychiatrist" name="category" />
+                          <label for="Psychiatrist">Psychiatrist</label>
+                        </div>
+              
+                        <div class="option">
+                          <input type="radio" class="radio" id="Paediatrician" name="category" />
+                          <label for="Paediatrician">Paediatrician</label>
+                        </div>
+                      </div>
+              
+                      <div class="selected">
+                        Select Profession
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <button class="submit-btn" onclick="RegisterUser()">Sign up</button>
+        </div>
+        <div class="login slide-up">
+            <div class="center">
+                <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+                <div class="form-holder">
+                    <input id="email" type="email" class="input" placeholder="Email" />
+                    <input id="password" type="password" class="input" placeholder="Password" />
+                </div>
+                <button class="submit-btn" onclick="LoginUser()">Log in</button>
+            </div>
+        </div>
+    </div>
+
+    <!--database--->
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyC8HK2fMjYyuNQbYsZF_CcZDaDcQPwgddg",
+    authDomain: "virtual-hospital-891d2.firebaseapp.com",
+    databaseURL: "https://virtual-hospital-891d2-default-rtdb.firebaseio.com",
+    projectId: "virtual-hospital-891d2",
+    storageBucket: "virtual-hospital-891d2.appspot.com",
+    messagingSenderId: "658577231861",
+    appId: "1:658577231861:web:0ea622df058106d82adabc"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<!--database over..-->
+    <script src="../JS/doctorfirstpage.js"></script>
+</body>
+</html>

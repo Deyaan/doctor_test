@@ -1,0 +1,13 @@
+#btn{
+    margin-left: 990px;
+    align-content: center;
+    padding: 15px;
+    border-radius: 15px;
+    background: lightgrey;
+    color: #0099ff;
+    font-size: large;
+}
+#btn:hover{
+    background: grey;
+    color: #0059ff;
+}
